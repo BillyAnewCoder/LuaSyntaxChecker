@@ -1,8 +1,3 @@
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: http://codemirror.net/LICENSE
-
-// LUA mode. Ported to CodeMirror 2 from Franciszek Wawrzak's
-// CodeMirror 1 mode.
 // highlights keywords, strings, comments (no leveling supported! ("[==[")), tokens, basic indenting
 
 (function(mod) {
@@ -26,7 +21,7 @@ CodeMirror.defineMode("lua", function(config, parserConfig) {
   }
   var specials = wordRE(parserConfig.specials || []);
 
-  // long list of standard functions from lua manual
+  //list of standard functions from lua manual
   var builtins = wordRE([
     "_G","_VERSION","assert","collectgarbage","dofile","error","getfenv","getmetatable","ipairs","load",
     "loadfile","loadstring","module","next","pairs","pcall","print","rawequal","rawget","rawset","require",
